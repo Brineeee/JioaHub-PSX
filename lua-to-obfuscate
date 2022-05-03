@@ -1,0 +1,122 @@
+-- Library
+
+local Flux = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/fluxlib.txt")()
+
+-- Window
+
+local win = Flux:Window("JioaHub V7", "Pet Simulator X", Color3.fromRGB(120, 220, 0), Enum.KeyCode.LeftControl)
+
+-- Tab
+
+local tab = win:Tab("Farms", "http://www.roblox.com/asset/?id=6023426915")
+local script1 = win:Tab("Mastery", "http://www.roblox.com/asset/?id=6023426915")
+local script2 = win:Tab("Miscs", "http://www.roblox.com/asset/?id=6023426915")
+
+Flux:Notification("Welcome to JioaHub // This script made by mech#0945 // Thanks for using JioaHub", "Okay")
+
+-- Script
+
+tab:Button("Auto Farm", " ", function()
+Flux:Notification("if it's not working change your 4 pets name to 1,2,3,4 and equip it", "Okay")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brineeee/autofarm/main/lua-to-obfuscate"))()
+end)
+
+tab:Line()
+
+tab:Button("Coin Tracter", " ", function() 
+loadstring(game:HttpGet('https://pastebin.com/raw/dPXXyp4A'))()
+end)
+
+tab:Line()
+
+tab:Button("Triple Damage", " ", function()
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Triple Damage")
+        workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Triple Damage"})
+    print("Triple damage boost checked")
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "JioaHub";
+    Text = "Triple Damage Activate";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+    Duration = 3;
+})
+end) 
+
+tab:Button("Triple Coins", " ", function()
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Triple Coins")
+        workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Triple Damage"})
+    print("Triple coins boost checked")
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "JioaHub";
+    Text = "Triple Damage Activate";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+    Duration = 3;
+}) 
+end) 
+
+tab:Button("Super Lucky", " ", function()
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Super Lucky")
+        workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Super Lucky"})
+    print("Super lucky boost checked")
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "JioaHub";
+    Text = "Super Lucky Activate";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+    Duration = 3;
+})
+end)
+
+tab:Button("Ultra Lucky", " ", function()
+local Sound = Instance.new("Sound",game:GetService("SoundService"))
+Sound.SoundId = "rbxassetid://232127604"
+Sound:Play()
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts:FindFirstChild("Ultra Lucky")
+        workspace.__THINGS.__REMOTES["activate boost"]:FireServer({[1] = "Ultra Lucky"})
+    print("Ultra lucky boost checked")
+    game.StarterGui:SetCore("SendNotification", {
+    Title = "JioaHub";
+    Text = "Ultra Lucky Activate";
+    Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+    Duration = 3;
+})
+end)
+
+script1:Button("Mastery Enchant", " ", function()
+Flux:Notification("(1. You need at least 64M Gems, 15K Coins and Fantasy World unlocked.) (2. Execute the script. Wait until it shows a red 30 or 40 or 50 on the pet icon. Now, wait some time and watch the gui/the chat.)", "Okay")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brineeee/enchant-mastery/main/lua-to-obfuscate"))()
+end)
+
+script1:Button("Mastery Egg", " ", function()
+Flux:Notification("normal and golden activated!", "Okay")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brineeee/mastery-eggs/main/lua-to-obfuscate"))() 
+end)
+
+script1:Button("Mastery Coins", " ", function()
+Flux:Notification("if it's not working change your 4 pets name to 1,2,3,4 and equip it", "Okay")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brineeee/autofarm/main/lua-to-obfuscate"))()
+end)
+
+script2:Button("Get Gamepass", "the ZHub one is my old script.", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Brineeee/Gamepass-v2/main/lua-to-obfuscate"))()
+end) 
+
+script2:Button("Teleport to Plaza", " ", function()
+   game:GetService("TeleportService"):Teleport(7722306047)
+end) 
+
+script2:Button("Teleport to Spawn", " ", function()
+   game:GetService("TeleportService"):Teleport(6284583030)
+end) 
+
+script2:Button("Rejoin", " ", function()
+   game:GetService("TeleportService"):Teleport(game.PlaceId)
+   print("80")
+end) 
